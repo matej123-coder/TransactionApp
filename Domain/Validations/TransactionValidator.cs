@@ -10,15 +10,19 @@ namespace Domain.Validations
 {
     public class TransactionValidator : AbstractValidator<TransactionDTO>
     {
+        private static readonly string[] AllowedTypes = { "POS", "Ecommerce" };
         public  TransactionValidator()
         {
+
             RuleFor(t => t.Amount)
                 .NotNull().WithMessage("Amount is required.")
                 .GreaterThan(0).WithMessage("Amount must be greater than 0.");
 
             RuleFor(t => t.Type)
-                .NotEmpty().WithMessage("TransactionType is required.");
-
+                .NotEmpty().WithMessage("TransactionType is required.")
+                .Must(type=>AllowedTypes.Contains(type)).WithMessage("Transaction type must be either POS or Ecommerce")
+            RuleFor(t => t.Currency)
+                .NotEmpty().WithMessage("Currency is required.");
             RuleFor(t => t.Client)
                 .NotNull().WithMessage("Client info is required.");
 
