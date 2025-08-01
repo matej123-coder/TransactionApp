@@ -11,6 +11,7 @@ namespace Services.Abstraction
     {
         Task<FeeLogDto> CalculateFeeAsync(TransactionDTO transaction);
         Task<IEnumerable<FeeLogDto>> CalculateFeesBatchAsync(IEnumerable<TransactionDTO> transactions);
+        Task<IEnumerable<FeeLogDto>> GetFeeLogs();
 
     }
 }

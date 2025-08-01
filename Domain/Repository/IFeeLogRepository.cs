@@ -10,5 +10,6 @@ namespace Domain.Repository
     public interface IFeeLogRepository
     {
         Task SaveFeeLogAsync(FeeLog feeLog);
+        Task<List<FeeLog>> GetAllFeeLogs();
     }
 }

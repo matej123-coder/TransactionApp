@@ -23,7 +23,12 @@ namespace Persistance
                 .HasOne(t => t.Client)
                 .WithMany()
                 .OnDelete(DeleteBehavior.Cascade);
-
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Amount)
+        .       HasColumnType("decimal(18,4)");
+            modelBuilder.Entity<FeeLog>()
+            .Property(t => t.FeeAmount)
+            .HasColumnType("decimal(18,4)");
             modelBuilder.Entity<FeeLog>()
                 .HasOne(f => f.Transaction)
                 .WithMany()

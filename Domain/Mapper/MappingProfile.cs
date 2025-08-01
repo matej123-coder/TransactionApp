@@ -12,12 +12,12 @@ namespace Domain.Mapper
     {
         public MappingProfile()
         {
-          
-            CreateMap<TransactionDTO, Transaction>();
-            CreateMap<ClientDto, ClientInfo>();
-            CreateMap<FeeLogDto, FeeLog>();
-
-            
+            CreateMap<TransactionDTO, Transaction>()
+               .ForMember(dest => dest.Id, opt => opt.Ignore());
+            CreateMap<ClientDto, ClientInfo>()
+             .ForMember(dest => dest.Id, opt => opt.Ignore());
+            CreateMap<FeeLogDto, FeeLog>()
+             .ForMember(dest => dest.Id, opt => opt.Ignore());
             CreateMap<Transaction, TransactionDTO>();
             CreateMap<ClientInfo, ClientDto>();
             CreateMap<FeeLog, FeeLogDto>();

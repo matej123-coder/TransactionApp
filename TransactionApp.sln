@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicess", "Servicess\Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance", "Persistance\Persistance.csproj", "{4D47619C-8B70-476D-BB1C-EC60FA150C08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeeCalculateTests", "FeeCalculateTests\FeeCalculateTests.csproj", "{BE7D53C1-F559-43BC-8303-D7989C3F0984}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{4D47619C-8B70-476D-BB1C-EC60FA150C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D47619C-8B70-476D-BB1C-EC60FA150C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D47619C-8B70-476D-BB1C-EC60FA150C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7D53C1-F559-43BC-8303-D7989C3F0984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7D53C1-F559-43BC-8303-D7989C3F0984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7D53C1-F559-43BC-8303-D7989C3F0984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7D53C1-F559-43BC-8303-D7989C3F0984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{182ABAFD-3235-4FFA-B3F5-5084C5AE2C90} = {EB017D5D-7B31-4C98-ADDB-97DE6E20EE35}
 		{76A59CFB-07DF-4FDF-B3ED-C9146652AD3E} = {EB017D5D-7B31-4C98-ADDB-97DE6E20EE35}
 		{4D47619C-8B70-476D-BB1C-EC60FA150C08} = {2359832D-17EA-441E-8B6B-4F6577F6361D}
+		{BE7D53C1-F559-43BC-8303-D7989C3F0984} = {2359832D-17EA-441E-8B6B-4F6577F6361D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEB90956-C25E-4A70-94DE-30943633D7B4}

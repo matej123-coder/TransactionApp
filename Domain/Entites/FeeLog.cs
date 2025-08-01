@@ -8,6 +8,7 @@ namespace Domain.Entites
 {
     public class FeeLog
     {
+
         public int? Id { get; set; }
         public Transaction? Transaction { get; set; }
         public decimal? FeeAmount { get; set; }
